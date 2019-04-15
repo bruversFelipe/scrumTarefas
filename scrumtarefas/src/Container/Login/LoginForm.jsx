@@ -12,6 +12,8 @@ const formOpitons = {
   marginBottom: "15px"
 };
 
+const colorIcon = { color: "rgba(0,0,0,.25)" };
+
 const LoginForm = ({ form, submitForm }) => {
   const submit = e => {
     e.preventDefault();
@@ -24,37 +26,37 @@ const LoginForm = ({ form, submitForm }) => {
   return (
     <Form onSubmit={submit} className="login-form">
       <Form.Item>
-        {form.getFieldDecorator("userName", {
-          rules: [{ required: true, message: "Please input your username!" }]
+        {form.getFieldDecorator("usuario", {
+          rules: [{ required: true, message: "Por favor, digite o usuário" }]
         })(
           <Input
-            prefix={<Icon type="user" style={{ color: "rgba(0,0,0,.25)" }} />}
-            placeholder="Username"
+            prefix={<Icon type="user" style={colorIcon} />}
+            placeholder="Usuário"
           />
         )}
       </Form.Item>
       <Form.Item>
-        {form.getFieldDecorator("password", {
-          rules: [{ required: true, message: "Please input your Password!" }]
+        {form.getFieldDecorator("senha", {
+          rules: [{ required: true, message: "Por favor, digite sua senha!" }]
         })(
           <Input
-            prefix={<Icon type="lock" style={{ color: "rgba(0,0,0,.25)" }} />}
+            prefix={<Icon type="lock" style={colorIcon} />}
             type="password"
-            placeholder="Password"
+            placeholder="Senha"
           />
         )}
       </Form.Item>
       <div style={formOpitons}>
-        <Form.Item style={{ margin: 0 }}>
-          {form.getFieldDecorator("remember", {
+        <Form.Item>
+          {form.getFieldDecorator("lembrarme", {
             valuePropName: "checked",
             initialValue: true
-          })(<Checkbox>Remember me</Checkbox>)}
+          })(<Checkbox>Lembrar-me</Checkbox>)}
         </Form.Item>
       </div>
       <Form.Item>
-        <Button style={{ width: "100%" }} type="primary" htmlType="submit">
-          Log in
+        <Button block type="primary" htmlType="submit">
+          Entrar
         </Button>
       </Form.Item>
     </Form>

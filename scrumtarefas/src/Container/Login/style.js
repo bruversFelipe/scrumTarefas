@@ -22,31 +22,12 @@ const LoginContainerWrapper = styled.div`
       display: flex;
       align-items: center;
       flex-direction: column;
+      margin-bottom: 10px;
 
       h2 {
         font-weight: 300;
       }
     }
-
-    .sign-socials {
-      margin-bottom: 2px;
-    }
-
-    .socials-divider {
-      margin-top: 0;
-      font-weight: 400;
-      font-style: italic;
-
-      &::after, &::before {
-        border-color: #bfbfbf;
-      }
-    }
-
-    .signup-divider {
-      margin: 0;
-      background: #bfbfbf;
-    }
-
     .singup {
       margin-top: 10px;
       text-align: center;

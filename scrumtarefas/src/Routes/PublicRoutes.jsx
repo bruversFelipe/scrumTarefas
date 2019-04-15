@@ -4,6 +4,7 @@ import { ThemeProvider } from "styled-components";
 
 import LoginPage from "../Pages/Login";
 import themeDefault from "../Theme/default";
+import Loading from "../Components/Loading";
 
 const MasterPage = React.lazy(() => import("../Pages/MasterPage"));
 
@@ -31,7 +32,7 @@ const PublicRoutes = ({ history }) => (
       <Switch>
         <Route exact path="/" component={LoginPage} />
         <Route exact path="/login" component={LoginPage} />
-        <React.Suspense fallback={<span>Loading</span>}>
+        <React.Suspense fallback={<Loading loading />}>
           <Authentic path="/home" logged component={MasterPage} />
         </React.Suspense>
       </Switch>
