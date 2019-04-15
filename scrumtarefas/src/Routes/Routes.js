@@ -1,9 +1,9 @@
 export default [
   {
     key: 1,
-    title: "Dashboard",
+    title: "Projetos",
     path: "/home",
-    component: "Dashboard",
+    component: "Projetos",
     exact: true
   }
 ];

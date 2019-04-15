@@ -1,6 +1,5 @@
 import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
-import Icon from "antd/lib/icon";
 import Title from "../Components/Title";
 import Loading from "../Components/Loading";
 import pages from "../Routes/Pages";

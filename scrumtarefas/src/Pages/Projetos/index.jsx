@@ -2,8 +2,8 @@ import React from "react";
 import Card from "antd/lib/card";
 import Icon from "antd/lib/icon";
 import { Row, Col } from "antd/lib/grid";
-import DashboardWrapper from "./style";
-import AddItem from "./AddItem";
+import ProjetosWrapper from "./style";
+import AddNovoProjeto from "../../Container/AddNovoProjeto";
 
 const { Meta } = Card;
 
@@ -22,8 +22,8 @@ const projects = [
   }
 ];
 
-const Dashboard = () => (
-  <DashboardWrapper>
+const Projetos = () => (
+  <ProjetosWrapper>
     <Row type="flex" gutter={32}>
       {projects.map(item => (
         <Col span={6} key={item.key}>
@@ -40,10 +40,10 @@ const Dashboard = () => (
         </Col>
       ))}
       <Col span={6}>
-        <AddItem />
+        <AddNovoProjeto />
       </Col>
     </Row>
-  </DashboardWrapper>
+  </ProjetosWrapper>
 );
 
-export default Dashboard;
+export default Projetos;

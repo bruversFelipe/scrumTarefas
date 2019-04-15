@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const DashboardWrapper = styled.div`
+const ProjetosWrapper = styled.div`
   .ant-card {
     box-shadow: 0px 0px 10px ${props => props.theme.shadow};
     border-radius: 10px;
@@ -37,4 +37,4 @@ const DashboardWrapper = styled.div`
   }
 `;
 
-export default DashboardWrapper;
+export default ProjetosWrapper;

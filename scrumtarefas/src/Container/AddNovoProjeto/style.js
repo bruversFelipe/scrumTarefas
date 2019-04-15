@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const AddItemWrapper = styled.div`
+const AddNovoProjetoWrapper = styled.div`
   width: 100%;
   height: 100%;
   border: 10px dashed ${props => props.theme.addItem};
@@ -16,4 +16,4 @@ const AddItemWrapper = styled.div`
   }
 `;
 
-export default AddItemWrapper;
+export default AddNovoProjetoWrapper;
