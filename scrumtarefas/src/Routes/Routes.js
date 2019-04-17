@@ -1,9 +1,16 @@
 export default [
   {
     key: 1,
-    title: "Projetos",
-    path: "/home",
-    component: "Projetos",
+    title: "Meus Projetos",
+    path: "/meus-projetos",
+    component: "MeusProjetos",
+    exact: true
+  },
+  {
+    key: 2,
+    title: "Editar meu Projeto",
+    path: "/meus-projetos/editar",
+    component: "EditarProjeto",
     exact: true
   }
 ];

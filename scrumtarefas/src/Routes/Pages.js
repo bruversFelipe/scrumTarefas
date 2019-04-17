@@ -1,5 +1,6 @@
 import { lazy } from "react";
 
 export default {
-  Projetos: lazy(() => import("../Pages/Projetos"))
+  MeusProjetos: lazy(() => import("../Pages/Projetos")),
+  EditarProjeto: lazy(() => import("../Pages/EditarProjeto"))
 };

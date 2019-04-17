@@ -5,16 +5,10 @@ import Checkbox from "antd/lib/checkbox";
 import Icon from "antd/lib/icon";
 import Button from "antd/lib/button";
 
-const formOpitons = {
-  display: "flex",
-  justifyContent: "space-between",
-  alignItems: "center",
-  marginBottom: "15px"
-};
-
 const colorIcon = { color: "rgba(0,0,0,.25)" };
+const styleButton = { marginBottom: "25px" };
 
-const LoginForm = ({ form, submitForm }) => {
+const LoginForm = ({ form, submitForm, showNovaConta }) => {
   const submit = e => {
     e.preventDefault();
     form.validateFields((err, values) => {
@@ -46,19 +40,18 @@ const LoginForm = ({ form, submitForm }) => {
           />
         )}
       </Form.Item>
-      <div style={formOpitons}>
-        <Form.Item>
-          {form.getFieldDecorator("lembrarme", {
-            valuePropName: "checked",
-            initialValue: true
-          })(<Checkbox>Lembrar-me</Checkbox>)}
-        </Form.Item>
-      </div>
       <Form.Item>
-        <Button block type="primary" htmlType="submit">
-          Entrar
-        </Button>
+        {form.getFieldDecorator("lembrarme", {
+          valuePropName: "checked",
+          initialValue: true
+        })(<Checkbox>Lembrar-me</Checkbox>)}
       </Form.Item>
+      <Button block style={styleButton} type="primary" htmlType="submit">
+        Entrar
+      </Button>
+      <span className="singup">
+        Não possui uma conta? <span onClick={showNovaConta}>Crie já!</span>
+      </span>
     </Form>
   );
 };

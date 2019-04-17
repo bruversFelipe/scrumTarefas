@@ -11,6 +11,16 @@ const HeaderWrapper = styled(Header)`
   align-items: center;
   padding: 0 24px;
   justify-content: space-between;
+
+  .items-right {
+    display: flex;
+    align-items: center;
+
+    .ant-divider {
+      background: ${props => props.theme.title.detalhes};
+      height: 18px;
+    }
+  }
 `;
 
 export default HeaderWrapper;

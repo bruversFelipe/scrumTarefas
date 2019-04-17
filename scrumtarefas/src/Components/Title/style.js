@@ -6,6 +6,7 @@ const TitleWrapper = styled.h2`
   display: flex;
   align-items: center;
   margin: 12px 0px 40px;
+  white-space: nowrap;
 
   span {
     white-space: nowrap;
