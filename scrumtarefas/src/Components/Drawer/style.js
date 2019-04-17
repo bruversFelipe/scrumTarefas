@@ -13,6 +13,14 @@ const DrawerWrapper = styled(Drawer)`
 
     .ant-drawer-header {
       background: ${props => props.theme.drawer.header};
+      height: 64px;
+      display: flex;
+      align-items: center;
+
+      .ant-drawer-close {
+        color: ${props => props.theme.drawer.color};
+        height: 100%;
+      }
     }
 
     .ant-drawer-title {
