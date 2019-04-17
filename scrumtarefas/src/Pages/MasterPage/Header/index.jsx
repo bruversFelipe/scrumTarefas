@@ -4,11 +4,11 @@ import Dropdown from "antd/lib/dropdown";
 import Icon from "antd/lib/icon";
 import Menu from "antd/lib/menu";
 import Divider from "antd/lib/divider";
-import Drawer from "antd/lib/drawer";
 import HeaderWrapper from "./style";
 import Logo from "./Logo";
 import ThemeDark from "./ThemeDark";
 import Loading from "../../../Components/Loading";
+import Drawer from "../../../Components/Drawer";
 
 const EditarPerfil = React.lazy(() =>
   import("../../../Container/EditarPerfil")

@@ -15,8 +15,8 @@ const ThemeDark = () => {
     <div>
       <Switch
         size="small"
-        checkedChildren="Tema Claro"
-        unCheckedChildren="Tema Escuro"
+        checkedChildren="Tema Escuro"
+        unCheckedChildren="Tema Claro"
         onChange={onChangeTheme}
       />
     </div>
