@@ -42,7 +42,9 @@ const Header = () => {
   };
   return (
     <HeaderWrapper>
-      <Logo />
+      <Link to="/meus-projetos">
+        <Logo />
+      </Link>
       <div className="items-right">
         <ThemeDark />
         <Divider type="left" />
