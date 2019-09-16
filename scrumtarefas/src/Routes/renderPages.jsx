@@ -3,10 +3,12 @@ import { Switch, Route, Redirect } from "react-router-dom";
 import Title from "../Components/Title";
 import Loading from "../Components/Loading";
 import pages from "../Routes/Pages";
+import Estatisticas from "../Container/Estatisticas";
 
 const LazyComponent = (Component, title) => {
   return props => (
     <React.Suspense fallback={<Loading loading />}>
+      <Estatisticas />
       <Title title={title} />
       <Component {...props} />
     </React.Suspense>

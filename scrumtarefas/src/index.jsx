@@ -5,13 +5,13 @@ import "antd/dist/antd.css";
 import ptBr from "antd/lib/locale-provider/pt_BR";
 import PublicRoutes from "./Routes/PublicRoutes";
 import createHistory from "./Utils/createHistory";
-import GlobalCss from "./GlobalCss";
+import { ThemeContextProvider } from "./Theme/ThemeContext";
 
 ReactDOM.render(
   <LocaleProvider locale={ptBr}>
-    <GlobalCss>
+    <ThemeContextProvider>
       <PublicRoutes history={createHistory} />
-    </GlobalCss>
+    </ThemeContextProvider>
   </LocaleProvider>,
   document.getElementById("root")
 );

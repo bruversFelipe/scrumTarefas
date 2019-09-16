@@ -17,6 +17,7 @@ const LoginContainerWrapper = styled.div`
     padding: 25px;
     position: relative;
     background-color: rgba(255, 255, 255, 0.8);
+    justify-content: center;
 
     .center-content {
       display: flex;
@@ -29,12 +30,15 @@ const LoginContainerWrapper = styled.div`
       }
     }
     .singup {
-      margin-top: 10px;
       text-align: center;
+
+      span {
+        color: ${props => props.theme.primary};
+        cursor: pointer;
+      }
     }
   }
 `;
-
 
 const LoginLogo = styled.div`
   width: 80px;
