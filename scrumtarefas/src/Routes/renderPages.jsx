@@ -20,6 +20,7 @@ const renderPages = routes => (
         <Redirect exact from={route.path} to={route.redirect} />
       ) : (
         <Route
+          key={route.key}
           exact={route.exact}
           path={route.path}
           render={LazyComponent(pages[route.component], route.title)}

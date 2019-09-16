@@ -33,7 +33,7 @@ const PublicRoutes = ({ history }) => (
         <Route exact path="/" component={LoginPage} />
         <Route exact path="/login" component={LoginPage} />
         <React.Suspense fallback={<Loading loading />}>
-          <Authentic path="/home" logged component={MasterPage} />
+          <Authentic path="/meus-projetos" logged component={MasterPage} />
         </React.Suspense>
       </Switch>
     </Router>

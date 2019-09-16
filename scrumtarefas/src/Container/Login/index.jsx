@@ -6,7 +6,7 @@ import history from "../../Utils/createHistory";
 
 const LoginContainer = () => {
   const submitForm = () => {
-    history.push("/home");
+    history.push("/meus-projetos");
   };
 
   return (

@@ -4,6 +4,7 @@ import Icon from "antd/lib/icon";
 import { Row, Col } from "antd/lib/grid";
 import ProjetosWrapper from "./style";
 import AddNovoProjeto from "../../Container/AddNovoProjeto";
+import createHistory from "../../Utils/createHistory";
 
 const { Meta } = Card;
 
@@ -31,6 +32,12 @@ const Projetos = () => (
             cover={<img src={item.bgFundo} alt="" />}
             bordered={false}
             hoverable
+            onClick={() =>
+              createHistory.push({
+                state: { key: item.key },
+                pathname: "/meus-projetos/editar"
+              })
+            }
           >
             <div className="overlay">
               <Icon type="form" />
